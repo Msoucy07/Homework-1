@@ -1,12 +1,23 @@
-public class Car {
 
+public class Car {
     public static boolean handicapped = true;
 
-    public static String make = "";
-    public static String color = "";
+    public String make;
+    public String color;
     
-    public static void main(String[] args) {
-        System.out.println(make);
+    public Car(){
+        make = "toyota";
+        color = "pink";
+        handicapped = true;
+    }
+    public Car(String make, String color, boolean handicapped){
+        this.make = make;
+        this.color = color;
+        this.handicapped = handicapped;
     }
 
+
+    public String toString(){
+        return "Make: " + make + "\nColor: " + color + "\nHandicapped: " + handicapped;
+    }
 }
