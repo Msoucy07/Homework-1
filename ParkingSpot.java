@@ -1,6 +1,6 @@
 public class ParkingSpot {
 
-    Car myCar = new Car();  
+    Car myCar = new Car("Toyota", "Black", true);  
     public static boolean is_handicapped;
 
     public ParkingSpot(){
